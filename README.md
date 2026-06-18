@@ -1,22 +1,22 @@
 # Spring-examen-2
-1. Instrucciones para Ejecutar el Proyecto
+# 1, Instrucciones para Ejecutar el Proyecto
 Asegúrese de tener instalados Java 17+ (o la versión correspondiente a su proyecto) y Maven. Ejecute los siguientes comandos en la terminal raíz del proyecto:
 
 Bash
-# 1. Limpiar el directorio 'target' y compilar el proyecto instalando las dependencias
+1. Limpiar el directorio 'target' y compilar el proyecto instalando las dependencias
 mvn clean install
 
-# 2. Levantar el servidor embebido de Spring Boot (Tomcat)
+2. Levantar el servidor embebido de Spring Boot (Tomcat)
 mvn spring-boot:run
 
-2. Configuración de la Base de Datos (PostgreSQL)
+# 2. Configuración de la Base de Datos (PostgreSQL)
 Antes de iniciar la aplicación, configure sus credenciales en el archivo src/main/resources/application.properties y cree la base de datos ejecutando el siguiente comando en su gestor SQL (pgAdmin, DBeaver, etc.):
 
 SQL
 -- Crear la base de datos
 CREATE DATABASE db_pedidos;
 
-3. Documentacion de la API
+# 3. Documentacion de la API
 Para facilitar la evaluación y pruebas interactivas, puede acceder a la interfaz gráfica completa de Swagger UI desde el navegador web una vez el servidor esté corriendo:
 
 URL de Swagger UI: http://localhost:8080/swagger-ui/index.html
@@ -45,7 +45,7 @@ GET /api/pedidos/cliente/{clienteId}
 Permite obtener el historial de compras o pedidos asociados a un cliente específico.
 
 
-4. Ejemplos de Request JSON (Carga de Datos)
+# 4. Ejemplos de Request JSON (Carga de Datos)
 Utilice los siguientes bloques de código JSON para probar el comportamiento de los endpoints de creación (POST):
 
 A. Crear Cliente (POST /api/clientes)
@@ -80,8 +80,8 @@ JSON
 }
 
 
-5. Tecnologías usadas
-Java 21
+# 5. Tecnologías usadas
+Java 17
 Spring Boot
 Maven
 PostgreSQL

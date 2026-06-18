@@ -16,6 +16,7 @@ SQL
 -- Crear la base de datos
 CREATE DATABASE db_pedidos;
 
+3. Documentacion de la API
 Para facilitar la evaluación y pruebas interactivas, puede acceder a la interfaz gráfica completa de Swagger UI desde el navegador web una vez el servidor esté corriendo:
 
 URL de Swagger UI: http://localhost:8080/swagger-ui/index.html
@@ -79,7 +80,7 @@ JSON
 }
 
 
-Tecnologías usadas
+5. Tecnologías usadas
 Java 21
 Spring Boot
 Maven
